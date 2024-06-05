@@ -1,0 +1,8 @@
+services:
+  webapp:
+    image: spygram/django_app:latest
+    build:
+      context: '.'
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
